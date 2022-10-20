@@ -1,6 +1,6 @@
 library(topGO)
 
-geneID2GO <- readMappings(file = "../References/topGO_Annotation_Files/Cre_gene2go")
+geneID2GO <- readMappings(file = "../Reference_Files/Annotation_Files/Cre_gene2go")
 geneNames <- names(geneID2GO)
 
 RunTopGO <- function(interesting_genes, rownum = 1){

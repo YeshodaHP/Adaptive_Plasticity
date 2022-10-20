@@ -1,5 +1,5 @@
 name_conversion <- function(gene_list){
-    conversion_file <- read.csv("../References/Name_Conversion_Files/Clean_conversion_file.txt", sep = '\t')[,c(1,8)]
+    conversion_file <- read.csv("../Reference_Files/Name_Conversion/Clean_conversion_file.txt", sep = '\t')[,c(1,8)]
     #Replace the .t#.t# with nothing 
     conversion_file$`X.5.5` <- gsub(".t\\d.?\\d?", "", conversion_file$`X.5.5`)
     conversion_file$`X5.3.1` <- gsub(".t\\d.?\\d?", "", conversion_file$`X5.3.1`)
